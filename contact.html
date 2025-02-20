@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/424eaa904d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class = "navbar">
+        <div class = "navLeft"><a href="contact.html">Contact</a></div>
+        <div class = "navRight">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <main>
+        <a href="home.html"><img id = "me" src="images/20240318_101509.jpg" alt="Picture of me" width = 150px ></a>
+        <img id = "flower1" src="images/white-jasmine-flowers-flying-falling-heap1.png" width = 200px>
+        <h1>Contact</h1>
+        
+        <div class="container">
+            <div class="form">
+                <form action="index.php" method="get">
+                    <div class="radioGroup">
+                        <label for="Mr.">Mr.</label>
+                        <input type="radio" id="Mr." value="Mr." name="title">
+                        <label for="Ms.">Ms.</label>
+                        <input type="radio" id="Ms." value="Ms." name="title">
+                        <label for="Dr.">Dr.</label>
+                        <input type="radio" id="Dr." value="Dr." name="title">
+                    </div>
+        
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="John Smith" maxlength="50">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="johnsmith@gmail.com">
+        
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" placeholder="I really like your work!">
+        
+                    <div class="formButton">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>   
+        
+            <div class="contacts">
+                <span class="info" id="mail">
+                    <a href="mailto:ayeshajan667@gmail.com">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </a> Email: ayeshajan667@gmail.com
+                </span>
+                <span class="info" id="github">
+                    <a href="https://github.com/Ayesha-Jan" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a> Github: Ayesha-Jan
+                </span>
+                <span class="info" id="linkedin">
+                    <a href="https://www.linkedin.com/in/ayesha-jan-b11872338/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                    </a> LinkedIn: Ayesha Jan
+                </span>
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+</html>

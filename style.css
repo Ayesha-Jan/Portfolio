@@ -1,0 +1,360 @@
+@font-face {
+    font-family: Cinzel;
+    src: url(fonts/CinzelDecorative-Regular.otf);
+}
+@font-face {
+    font-family: Iceland;
+    src: url(fonts/IcelandWinterstorm_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+    font-family: Apple Chancery;
+    src: url(fonts/Apple\ Chancery.ttf);
+}
+
+body {
+    background-color: hsla(338, 83%, 77%, 0.834);
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/white-jasmine-flowers-flying-falling-heap2.png) no-repeat left;
+    background-size: 500px;
+    opacity: 0.65; /* Adjust the transparency */
+    z-index: -1; /* Place it behind the content */
+}
+
+.navbar{
+    background-color: rgb(215, 116, 149);
+    margin: 0px;
+    font-family: Cinzel;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 20px;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 30px;
+}
+.navbar a:hover{
+    background-color: rgb(234, 150, 178);
+    animation-name: glow;
+    animation-duration: 1s;
+}
+.navLeft a{
+    font-weight: bold;
+}
+.navRight{
+    display: flex;
+    gap: 20px
+}
+
+main{
+    margin: 20px;
+    display: flow-root;
+}
+
+#me{
+    padding: 10px;
+    border-radius: 1000px;
+    border-style: dotted;
+    border-color: aliceblue;
+    float: left;
+}
+#me:hover{
+    animation: glow 1s ease-in-out, grow 1s ease-in-out;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: Apple Chancery;
+    font-size: 110px;
+    font-weight: bold;
+    border-left: 0cap;
+    border-right: 0cap;
+    border-style: dotted;
+    margin: 0%;
+}
+
+#flower1{
+    float: right;
+}
+
+#description{
+    padding-left: 500px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: Apple Chancery;
+}
+
+.skill{
+    margin-bottom: 20px;
+    background-color: #a0c2b5;
+    border-radius: 30px;
+    display: flex; 
+    justify-content: center;  /* Centers content inside */
+    align-items: center;
+    width: 100%;
+}
+.skillName{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 5px;
+    font-family: Apple Chancery;
+}
+.skillName i {
+    margin-right: 20px;  /* Adjust spacing */
+    display: flex;
+    align-items: center;
+}
+.progressBar{
+    width: 100%;
+    background-color: #d87093;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+}
+.progress{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 10px;
+    border-radius: 10px;
+    animation: fillBar 2s ease-out forwards;
+}
+
+.fa-brands.fa-java.fa-2x{
+        color: #5382a1;
+}
+.fa-brands.fa-python.fa-2x{
+    color: #4584b6;
+}
+.fa-brands.fa-c.fa-2x{
+    color: #9179E4;
+}
+.fa-brands.fa-css.fa-2x{
+    color: #663399;
+}
+.fa-brands.fa-html5.fa-2x{
+    color: #e34c26;
+}
+.button{
+    padding-left: 300px;
+    text-align: center;
+}
+button{
+    color: white;
+    background-color: #a0c2b5;
+    font-size: 40px;
+    font-family: Apple Chancery;
+    border-color: white;
+    border-radius: 20px;
+}
+button:hover{
+    animation: glow 1s ease-in-out, grow 1s ease-in-out;
+}
+
+.projects{
+    width: 98%;
+    display: flex;
+    gap: 10px;
+    background-color: #a0c2b5;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+#preview{
+    border-radius: 20px;
+}
+#preview:hover{
+    animation: glow 1s ease-in-out, grow 1s ease-in-out;
+}
+#title{
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-style: dotted;
+    padding: 10px;
+    border-radius: 20px;
+}
+#about{
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures it doesn't exceed screen width */
+    max-width: 1200px; /* Prevents it from being too wide */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height dynamically */
+    width: 40%;
+    border-radius: 50px;
+    background-color: #a0c2b5;
+    padding: 10px;
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    background-color: #a0c2b5;
+    border-radius: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 15px;
+}
+input{
+    height: 32px;
+    background-color: #d87093;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+input[type="radio"]{
+    appearance: none;
+    transform: scale(1.6);
+    vertical-align:middle;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+input[type="radio"]:checked{
+    background-color: #d87093;
+    border-color: white;
+}
+.radioGroup{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.formButton{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    flex-direction: row;
+}
+input[type="reset"]{
+    color: white;
+    font-size: 30px;
+    height: auto;
+    border-radius: 50px;
+}
+input[type="submit"]{
+    color: white;
+    font-size: 30px;
+    height: auto;
+    border-radius: 50px;
+}
+input[type="reset"]:hover{
+    animation: glow 1s ease-in-out, grow 1s ease-in-out;
+}
+input[type="submit"]:hover{
+    animation: glow 1s ease-in-out, grow 1s ease-in-out;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: auto; /* Adjust height dynamically */
+    width: 40%;
+    border-radius: 50px;
+    background-color: #a0c2b5;
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 15px;
+}
+.info a{
+    text-decoration: none;
+}
+.fa-solid.fa-envelope.fa-2x{
+    color: hsl(203, 76%, 57%);
+}
+.fa-solid.fa-envelope.fa-2x:hover{
+    color: hsl(203, 76%, 57%, 60%);
+    animation: grow 1s ease-in-out;
+}
+.fa-brands.fa-github.fa-2x{
+    color: hsl(210, 12%, 16%);
+}
+.fa-brands.fa-github.fa-2x:hover{
+    color: hsl(210, 12%, 16%, 60%);
+    animation: grow 1s ease-in-out;
+}
+.fa-brands.fa-linkedin.fa-2x{
+    color: hsl(210, 90%, 40%);
+}
+.fa-brands.fa-linkedin.fa-2x:hover{
+    color: hsl(210, 90%, 40%, 60%);
+    animation: grow 1s ease-in-out;
+}
+
+@keyframes glow{
+    75%{box-shadow: 0px 0px 50px white;}
+}
+@keyframes grow {
+    50%{transform: scale(1.1)}
+}
+@keyframes fillBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--skillLevel);
+    }
+}
