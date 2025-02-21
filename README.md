@@ -46,7 +46,7 @@ Want to personalize the site? You can:
 ## 🔗 Connect With Me
 📧 **Email**: ayeshajan667@gmail.com
 
-🔗 **LinkedIn**: linkedin.com/in/ayesha-jan-b11872338/](https://www.linkedin.com/in/ayesha-jan-b11872338/
+🔗 **LinkedIn**: https://www.linkedin.com/in/ayesha-jan-b11872338/
 
 ---
 
